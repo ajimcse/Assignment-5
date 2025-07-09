@@ -3,7 +3,7 @@ document.getElementById('mine-click-btn').addEventListener('click', function () 
     const inputText = getInputTextFiledValue('add-me-btn');
     const mainBalance = getInputTextFiledValue('main-balance');
 
-    if (!isNaN(inputValue) && inputValue > 0 && inputValue <= mainBalance){
+    if (!isNaN(inputValue) && inputValue > 0 && inputValue <= mainBalance) {
         const newMainBalance = mainBalance - inputValue;
         const newAddMeValue = inputText + inputValue;
         document.getElementById('main-balance').innerText = newMainBalance.toFixed(2);
@@ -19,12 +19,12 @@ document.getElementById('mine-click-btn').addEventListener('click', function () 
         historyDiv.style.fontSize = '20px';
         historyDiv.style.border = '1px solid #ccc';
         historyDiv.style.padding = '20px';
-        historyDiv.style.margin='20px'
+        historyDiv.style.margin = '20px'
         historyDiv.style.marginBottom = '20px';
         historyDiv.style.borderRadius = '5px';
         historyDiv.style.backgroundColor = '#f9f9f9';
 
-        historyDiv.innerText = `${inputValue} TK Donate for the Flood in Noakhali, Bangladesh,
+        historyDiv.innerText = `${inputValue}.TK Donate for the Flood in Noakhali, Bangladesh,
          Bangladesh-Date:${dateString} Time:${timeString}`;
 
         historyContainer.appendChild(historyDiv);
@@ -49,8 +49,6 @@ document.getElementById('mine-click-btn2').addEventListener('click', function ()
         document.getElementById('main-balance').innerText = inputnNegtive.toFixed(2);
         document.getElementById('add-me-btn2').innerText = inputPrgitive.toFixed(2);
         document.getElementById('input-number2').value = '';
-
-
     }
 
     else {
@@ -58,8 +56,6 @@ document.getElementById('mine-click-btn2').addEventListener('click', function ()
     }
 
 })
-
-
 
 
 document.getElementById('Donation-btn').addEventListener('click', function () {
